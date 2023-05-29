@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <title>Aula 2- Sexta-feira</title>
+    <style>
+body{
+    background-color: rgb(3, 3, 3); /*cor do fundo*/
+    color:cornsilk; /*cor da fonte*/
+   margin: 100px 200px 5px 200px;
+}
+h1{
+    background-color: rgb(0, 0, 0);
+    color: rgb(249, 245, 252);
+    font-family: 'Courgette', cursive;
+    font-size: 25;
+    text-align: center;
+    font-weight: bolder;
+    margin: 5px 50px 5px 50px;
+    padding: 30px;
+}
+
+    
+p{
+    text-align: justify;
+    font-size: 20pt;
+    text-indent: 20pt;
+
+}
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+  
+    <title></title>
+  
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+  
+        div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+  
+        h2 {
+            font-size: 5em;
+            font-family: serif;
+            color: #00008B;
+            text-align: center;
+            animation: animate 
+                0.5s linear infinite;
+        }
+  
+        @keyframes animate {
+            0% {
+                opacity: 0;
+            }
+  
+            25% {
+                opacity: 0.7;
+            }
+  
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<html>
+    <head>
+      <style>
+        svg.led {
+        width: 15px;
+        height: 15px;
+      }
+      </style>
+    </head>
+    <body>
+      
+  <svg class="led"> //solid green
+  <circle r="50%" cx="50%" cy="50%" 
+          fill="green"
+          stroke="green"
+          fill-opacity="0.5"
+          stroke-width="5%"
+          stroke-opacity="0.3"     >
+  </circle>
+  </svg>
+      
+  <svg class="led"> //solid red
+  <circle r="50%" cx="50%" cy="50%" 
+          fill="red"
+          stroke="darkred"
+          fill-opacity="0.5"
+          stroke-width="5%"
+          stroke-opacity="0.3"     >
+  </circle>
+  </svg>
+      
+   <svg class="led"> //white 
+  <circle r="50%" cx="50%" cy="50%"  
+          fill="white"
+          stroke="darkblue"
+          fill-opacity="0.5" 
+          stroke-width="7%"
+          stroke-opacity="0.3"     >
+  </circle>
+  </svg>
+      
+  <svg class="led"> //blue faster
+  <circle r="50%" cx="50%" cy="50%"  
+          fill="darkblue"
+          stroke="darkblue"
+          fill-opacity="0.5"
+          stroke-width="5%"
+          stroke-opacity="0.3"     >
+    <animate attributeName="fill" 
+    values="white;darkblue;white"       
+    dur="0.2s" repeatCount="indefinite"
+    calcMode="discrete"
+    />
+  </circle>
+  </svg>
+      
+  <svg class="led"> //blue fast
+  <circle r="50%" cx="50%" cy="50%"  
+          fill="darkblue"
+          stroke="darkblue"
+          fill-opacity="0.5"
+          stroke-width="5%"
+          stroke-opacity="0.3"     >
+    <animate attributeName="fill" 
+    values="white;darkblue;white"       
+    dur="0.5s" repeatCount="indefinite"
+    calcMode="discrete"
+    />
+  </circle>
+  </svg>
+  
+  <svg class="led"> //blue
+  <circle r="50%" cx="50%" cy="50%" 
+          fill="darkblue"
+          stroke="darkblue"
+          fill-opacity="0.5"
+          stroke-width="5%"
+          stroke-opacity="0.3"     >
+    <animate attributeName="fill" 
+    values="white;darkblue;white"       
+    dur="0.5s" repeatCount="indefinite"
+    />
+  </circle>
+  </svg>
+  
+  
+  <svg class="led"> //red
+  <circle r="50%" cx="50%" cy="50%"  
+          fill="darkred"
+          stroke="darkred"
+          fill-opacity="0.5" 
+          stroke-width="5%"
+          stroke-opacity="0.3"     >
+    <animate attributeName="fill" 
+    values="white;red;white"       
+    dur="0.5s" repeatCount="indefinite"
+    />
+  </circle>
+  </svg>
+  
+  <svg class="led"> //blue
+  <circle r="50%" cx="50%" cy="50%" 
+          fill="darkblue"
+          stroke="darkblue"
+          fill-opacity="0.5"
+          stroke-width="5%"
+          stroke-opacity="0.3"     >
+    <animate attributeName="fill" 
+    values="white;darkblue;white"       
+    dur="0.5s" repeatCount="indefinite"
+    />
+  </circle>
+  </svg>
+  
+  
+  <svg class="led"> //green
+  <circle r="50%" cx="50%" cy="50%" 
+          fill="darkgreen"
+          stroke="darkgreen"
+          fill-opacity="0.5" 
+          stroke-width="5%"
+          stroke-opacity="0.3"     >
+    <animate attributeName="fill" 
+    values="white;green;white"       
+    dur="0.5s" repeatCount="indefinite"
+    />
+  </circle>
+  </svg>
+  
+  <svg class="led"> //green config no ip
+  <circle r="50%" cx="50%" cy="50%" 
+          fill="darkgreen"
+          stroke="darkgreen"
+          fill-opacity="0.5" 
+          stroke-width="5%"
+          stroke-opacity="0.3"     >
+    <animate attributeName="fill" 
+    values="white;green;white;green;white;green;white;white;white;white"   
+    dur="2.5s" repeatCount="indefinite"
+    />
+  </circle>
+  </svg>
+      
+    </body>
+  </html>
+  <html>
+    <head>
+      <style>
+        svg.led {
+        width: 15px;
+        height: 15px;
+      }
+      </style>
+    </head>
+    <body>
+      
+  <svg class="led"> //solid green
+  <circle r="50%" cx="50%" cy="50%" 
+          fill="green"
+          stroke="green"
+          fill-opacity="0.5"
+          stroke-width="5%"
+          stroke-opacity="0.3"     >
+  </circle>
+  </svg>
+      
+  <svg class="led"> //solid red
+  <circle r="50%" cx="50%" cy="50%" 
+          fill="red"
+          stroke="darkred"
+          fill-opacity="0.5"
+          stroke-width="5%"
+          stroke-opacity="0.3"     >
+  </circle>
+  </svg>
+      
+   <svg class="led"> //white 
+  <circle r="50%" cx="50%" cy="50%"  
+          fill="white"
+          stroke="darkblue"
+          fill-opacity="0.5" 
+          stroke-width="7%"
+          stroke-opacity="0.3"     >
+  </circle>
+  </svg>
+      
+  <svg class="led"> //blue faster
+  <circle r="50%" cx="50%" cy="50%"  
+          fill="darkblue"
+          stroke="darkblue"
+          fill-opacity="0.5"
+          stroke-width="5%"
+          stroke-opacity="0.3"     >
+    <animate attributeName="fill" 
+    values="white;darkblue;white"       
+    dur="0.2s" repeatCount="indefinite"
+    calcMode="discrete"
+    />
+  </circle>
+  </svg>
+      
+  <svg class="led"> //blue fast
+  <circle r="50%" cx="50%" cy="50%"  
+          fill="darkblue"
+          stroke="darkblue"
+          fill-opacity="0.5"
+          stroke-width="5%"
+          stroke-opacity="0.3"     >
+    <animate attributeName="fill" 
+    values="white;darkblue;white"       
+    dur="0.5s" repeatCount="indefinite"
+    calcMode="discrete"
+    />
+  </circle>
+  </svg>
+  
+  <svg class="led"> //blue
+  <circle r="50%" cx="50%" cy="50%" 
+          fill="darkblue"
+          stroke="darkblue"
+          fill-opacity="0.5"
+          stroke-width="5%"
+          stroke-opacity="0.3"     >
+    <animate attributeName="fill" 
+    values="white;darkblue;white"       
+    dur="0.5s" repeatCount="indefinite"
+    />
+  </circle>
+  </svg>
+  
+  
+  <svg class="led"> //red
+  <circle r="50%" cx="50%" cy="50%"  
+          fill="darkred"
+          stroke="darkred"
+          fill-opacity="0.5" 
+          stroke-width="5%"
+          stroke-opacity="0.3"     >
+    <animate attributeName="fill" 
+    values="white;red;white"       
+    dur="0.5s" repeatCount="indefinite"
+    />
+  </circle>
+  </svg>
+  
+  <svg class="led"> //blue
+  <circle r="50%" cx="50%" cy="50%" 
+          fill="darkblue"
+          stroke="darkblue"
+          fill-opacity="0.5"
+          stroke-width="5%"
+          stroke-opacity="0.3"     >
+    <animate attributeName="fill" 
+    values="white;darkblue;white"       
+    dur="0.5s" repeatCount="indefinite"
+    />
+  </circle>
+  </svg>
+  
+  
+  <svg class="led"> //green
+  <circle r="50%" cx="50%" cy="50%" 
+          fill="darkgreen"
+          stroke="darkgreen"
+          fill-opacity="0.5" 
+          stroke-width="5%"
+          stroke-opacity="0.3"     >
+    <animate attributeName="fill" 
+    values="white;green;white"       
+    dur="0.5s" repeatCount="indefinite"
+    />
+  </circle>
+  </svg>
+  
+  <svg class="led"> //green config no ip
+  <circle r="50%" cx="50%" cy="50%" 
+          fill="darkgreen"
+          stroke="darkgreen"
+          fill-opacity="0.5" 
+          stroke-width="5%"
+          stroke-opacity="0.3"     >
+    <animate attributeName="fill" 
+    values="white;green;white;green;white;green;white;white;white;white"   
+    dur="2.5s" repeatCount="indefinite"
+    />
+  </circle>
+  </svg>
+      
+    </body>
+  </html>
+  <html>
+    <head>
+      <style>
+        svg.led {
+        width: 15px;
+        height: 15px;
+      }
+      </style>
+    </head>
+    <body>
+      
+  <svg class="led"> //solid green
+  <circle r="50%" cx="50%" cy="50%" 
+          fill="green"
+          stroke="green"
+          fill-opacity="0.5"
+          stroke-width="5%"
+          stroke-opacity="0.3"     >
+  </circle>
+  </svg>
+      
+  <svg class="led"> //solid red
+  <circle r="50%" cx="50%" cy="50%" 
+          fill="red"
+          stroke="darkred"
+          fill-opacity="0.5"
+          stroke-width="5%"
+          stroke-opacity="0.3"     >
+  </circle>
+  </svg>
+      
+   <svg class="led"> //white 
+  <circle r="50%" cx="50%" cy="50%"  
+          fill="white"
+          stroke="darkblue"
+          fill-opacity="0.5" 
+          stroke-width="7%"
+          stroke-opacity="0.3"     >
+  </circle>
+  </svg>
+      
+  <svg class="led"> //blue faster
+  <circle r="50%" cx="50%" cy="50%"  
+          fill="darkblue"
+          stroke="darkblue"
+          fill-opacity="0.5"
+          stroke-width="5%"
+          stroke-opacity="0.3"     >
+    <animate attributeName="fill" 
+    values="white;darkblue;white"       
+    dur="0.2s" repeatCount="indefinite"
+    calcMode="discrete"
+    />
+  </circle>
+  </svg>
+      
+  <svg class="led"> //blue fast
+  <circle r="50%" cx="50%" cy="50%"  
+          fill="darkblue"
+          stroke="darkblue"
+          fill-opacity="0.5"
+          stroke-width="5%"
+          stroke-opacity="0.3"     >
+    <animate attributeName="fill" 
+    values="white;darkblue;white"       
+    dur="0.5s" repeatCount="indefinite"
+    calcMode="discrete"
+    />
+  </circle>
+  </svg>
+  
+  <svg class="led"> //blue
+  <circle r="50%" cx="50%" cy="50%" 
+          fill="darkblue"
+          stroke="darkblue"
+          fill-opacity="0.5"
+          stroke-width="5%"
+          stroke-opacity="0.3"     >
+    <animate attributeName="fill" 
+    values="white;darkblue;white"       
+    dur="0.5s" repeatCount="indefinite"
+    />
+  </circle>
+  </svg>
+  
+  
+  <svg class="led"> //red
+  <circle r="50%" cx="50%" cy="50%"  
+          fill="darkred"
+          stroke="darkred"
+          fill-opacity="0.5" 
+          stroke-width="5%"
+          stroke-opacity="0.3"     >
+    <animate attributeName="fill" 
+    values="white;red;white"       
+    dur="0.5s" repeatCount="indefinite"
+    />
+  </circle>
+  </svg>
+  
+  <svg class="led"> //blue
+  <circle r="50%" cx="50%" cy="50%" 
+          fill="darkblue"
+          stroke="darkblue"
+          fill-opacity="0.5"
+          stroke-width="5%"
+          stroke-opacity="0.3"     >
+    <animate attributeName="fill" 
+    values="white;darkblue;white"       
+    dur="0.5s" repeatCount="indefinite"
+    />
+  </circle>
+  </svg>
+  
+  
+  <svg class="led"> //green
+  <circle r="50%" cx="50%" cy="50%" 
+          fill="darkgreen"
+          stroke="darkgreen"
+          fill-opacity="0.5" 
+          stroke-width="5%"
+          stroke-opacity="0.3"     >
+    <animate attributeName="fill" 
+    values="white;green;white"       
+    dur="0.5s" repeatCount="indefinite"
+    />
+  </circle>
+  </svg>
+  
+  <svg class="led"> //green config no ip
+  <circle r="50%" cx="50%" cy="50%" 
+          fill="darkgreen"
+          stroke="darkgreen"
+          fill-opacity="0.5" 
+          stroke-width="5%"
+          stroke-opacity="0.3"     >
+    <animate attributeName="fill" 
+    values="white;green;white;green;white;green;white;white;white;white"   
+    dur="2.5s" repeatCount="indefinite"
+    />
+  </circle>
+  </svg>
+      
+    </body>
+  </html>
+  <html>
+    <head>
+      <style>
+        svg.led {
+        width: 15px;
+        height: 15px;
+      }
+      </style>
+    </head>
+    <body>
+      
+  <svg class="led"> //solid green
+  <circle r="50%" cx="50%" cy="50%" 
+          fill="green"
+          stroke="green"
+          fill-opacity="0.5"
+          stroke-width="5%"
+          stroke-opacity="0.3"     >
+  </circle>
+  </svg>
+      
+  <svg class="led"> //solid red
+  <circle r="50%" cx="50%" cy="50%" 
+          fill="red"
+          stroke="darkred"
+          fill-opacity="0.5"
+          stroke-width="5%"
+          stroke-opacity="0.3"     >
+  </circle>
+  </svg>
+      
+   <svg class="led"> //white 
+  <circle r="50%" cx="50%" cy="50%"  
+          fill="white"
+          stroke="darkblue"
+          fill-opacity="0.5" 
+          stroke-width="7%"
+          stroke-opacity="0.3"     >
+  </circle>
+  </svg>
+      
+  <svg class="led"> //blue faster
+  <circle r="50%" cx="50%" cy="50%"  
+          fill="darkblue"
+          stroke="darkblue"
+          fill-opacity="0.5"
+          stroke-width="5%"
+          stroke-opacity="0.3"     >
+    <animate attributeName="fill" 
+    values="white;darkblue;white"       
+    dur="0.2s" repeatCount="indefinite"
+    calcMode="discrete"
+    />
+  </circle>
+  </svg>
+      
+  <svg class="led"> //blue fast
+  <circle r="50%" cx="50%" cy="50%"  
+          fill="darkblue"
+          stroke="darkblue"
+          fill-opacity="0.5"
+          stroke-width="5%"
+          stroke-opacity="0.3"     >
+    <animate attributeName="fill" 
+    values="white;darkblue;white"       
+    dur="0.5s" repeatCount="indefinite"
+    calcMode="discrete"
+    />
+  </circle>
+  </svg>
+  
+  <svg class="led"> //blue
+  <circle r="50%" cx="50%" cy="50%" 
+          fill="darkblue"
+          stroke="darkblue"
+          fill-opacity="0.5"
+          stroke-width="5%"
+          stroke-opacity="0.3"     >
+    <animate attributeName="fill" 
+    values="white;darkblue;white"       
+    dur="0.5s" repeatCount="indefinite"
+    />
+  </circle>
+  </svg>
+  
+  
+  <svg class="led"> //red
+  <circle r="50%" cx="50%" cy="50%"  
+          fill="darkred"
+          stroke="darkred"
+          fill-opacity="0.5" 
+          stroke-width="5%"
+          stroke-opacity="0.3"     >
+    <animate attributeName="fill" 
+    values="white;red;white"       
+    dur="0.5s" repeatCount="indefinite"
+    />
+  </circle>
+  </svg>
+  
+  <svg class="led"> //blue
+  <circle r="50%" cx="50%" cy="50%" 
+          fill="darkblue"
+          stroke="darkblue"
+          fill-opacity="0.5"
+          stroke-width="5%"
+          stroke-opacity="0.3"     >
+    <animate attributeName="fill" 
+    values="white;darkblue;white"       
+    dur="0.5s" repeatCount="indefinite"
+    />
+  </circle>
+  </svg>
+  
+  
+  <svg class="led"> //green
+  <circle r="50%" cx="50%" cy="50%" 
+          fill="darkgreen"
+          stroke="darkgreen"
+          fill-opacity="0.5" 
+          stroke-width="5%"
+          stroke-opacity="0.3"     >
+    <animate attributeName="fill" 
+    values="white;green;white"       
+    dur="0.5s" repeatCount="indefinite"
+    />
+  </circle>
+  </svg>
+  
+  <svg class="led"> //green config no ip
+  <circle r="50%" cx="50%" cy="50%" 
+          fill="darkgreen"
+          stroke="darkgreen"
+          fill-opacity="0.5" 
+          stroke-width="5%"
+          stroke-opacity="0.3"     >
+    <animate attributeName="fill" 
+    values="white;green;white;green;white;green;white;white;white;white"   
+    dur="2.5s" repeatCount="indefinite"
+    />
+  </circle>
+  </svg>
+      
+    </body>
+  </html>
+        
+<body>
+    <div>
+        <h2></h2>
+    </div>
+</body>
+    </style>
+</head>
+<body>
+    <br>
+    <h1>Ingrid Teixeira Paulus</h1>
+    <br>
+    <h2>Rua:Corsan, número 99 - Bairro Vargas</h2>
+       <h2>Cidade: Sapucaia do Sul - Rs</h2>
+       <h2>fone: (51)983580202 - Email: ingridpaulus43@gmail.com</h2>
+       <h2>Idade:18 anos - Solteira - Não fumnate</h2>
+       <hr>
+       <br>
+       <p>Profissional técnico, altamente qualificado, seu dinamismo e relacionamento interpessoal 
+        superior, o destacam. Seu espírito de equipe e versatilidade são multiplicadores. 
+        Desenvolveu e aplica em seu cotidiano, os princípios da qualidade total, das quais se 
+        vale para reduzir desperdícios, aumentar ganhos e tornar-se um profissional
+        voltado a atender as expectativas de seu empregador.</p></p>
+        <br><hr>
+        <p>Automotivado, de natureza alegre, teve educação familiar rígida, profissional de visão
+            e focado em resultados, encontra-se em formação Técnico em Informática. 
+            Educação e treinamentos extensivos a tornaram um profissional
+           arrojado pronto para grandes desafios.  </p></p>
+           <br><hr><br>
+           <h2>Objetivo:</h2>
+           <h3>Suporte Técnico</h3>
+           <br><hr><br>
+           <h2>EDUCAÇÂO</h2>
+           <h3>Ensino Médio - 3°ano -2023</h3>
+<h3>Colégio:Cecilia Meireles</h3>
+<hr>
+<h2>Cursos</h2>
+<h3>Git e GitHUb - 8 Horas</h3>
+<h3>Colégio São Lucas/ULBRA</h2>
+<hr>
+<h3>Educação Profissional - Técnico em Informática - 1° Módulo</h3>
+<h3>Colégio São Lucas/ULBRA</h3>
+<br>
+<hr>
+<H3>CONHECIMENTO PROFISSSIONAL</H3>
+<h2>Atendimento ao público; Conhecimento de Sistemas operacionais (Windows/Android)</h2>
+<h2>Lógica de programação; Java; Editores de texto; Criação de Sites</h2>
+
+
+        
+       
+</html>
